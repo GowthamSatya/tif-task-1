@@ -104,8 +104,9 @@ const Pagination = (props) => {
 					disabled={currentPage == 1}
 					className={classes.paginationItem}
 					onClick={onPrevious}
+					name="previous"
 				>
-					<img src={Front} className={classes.arrowLeft} />
+					<img src={Front} className={classes.arrowLeft} alt="prevPage" />
 				</button>
 
 				<Text
@@ -122,8 +123,9 @@ const Pagination = (props) => {
 					disabled={currentPage == 2}
 					className={classes.paginationItem}
 					onClick={onNext}
+					name="next"
 				>
-					<img src={Front} />
+					<img src={Front} alt="nextPage" />
 				</button>
 			</Box>
 		</Box>

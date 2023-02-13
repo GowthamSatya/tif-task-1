@@ -30,7 +30,12 @@ const ArticleCard = ({ imgSrc, title, desc }) => {
 			alignItems={isMobile && "center"}
 		>
 			<CardBody padding="0">
-				<Image padding={isMobile && "0 15px"} src={imgSrc} borderRadius="lg" />
+				<Image
+					padding={isMobile && "0 15px"}
+					src={imgSrc}
+					borderRadius="lg"
+					alt="article_img"
+				/>
 				<Stack
 					padding={!isMobile && "15px"}
 					alignItems={isMobile ? "center" : "start"}
